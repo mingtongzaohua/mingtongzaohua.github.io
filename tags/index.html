@@ -256,13 +256,27 @@
            
 
 
-      
-    <div onclick="ShowGitment()" id="gitment-display-button" style="display: block;">
-        <span>显示 Gitment 评论</span>
-    </div>
-    <div id="gitment" class="hide"></div>
-
-
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: 'dbc525556544daddb7b5',
+        clientSecret: '946017cd0d122255aac124f27573e3aced07c92c',
+        repo: 'BlogCommunication',
+        owner: 'mingtongzaohua',
+        admin: 'mingtongzaohua',
+        id: md5(location.pathname),
+        labels: 'Gitalk'.split(',').filter(l => l),
+        perPage: 15,
+        pagerDirection: 'last',
+        createIssueManually: true,
+        distractionFreeMode: false
+      })
+      gitalk.render('gitalk-container')
+</script>
 
         </div>
         
