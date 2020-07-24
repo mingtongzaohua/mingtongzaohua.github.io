@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="/css/style.css?v=1.4.4">
     
+        <link rel="stylesheet" href="/css/third-party/gitment.css?v=1.4.4">
+    
     <script type="text/javascript">
         // Data Center
         var DC = {
             reward:	true,
             lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
             v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
-            g: JSON.parse('{"enable":false,"lazy":true,"owner":"mingtongzaohua","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            g: JSON.parse('{"enable":true,"lazy":true,"owner":"mingtongzaohua","repo":"BlogCommunication","oauth":{"client_id":"dbc525556544daddb7b5","client_secret":"946017cd0d122255aac124f27573e3aced07c92c"},"perPage":10}'),
             d: JSON.parse('{"app_id":null}')
         };
     </script>
@@ -197,7 +199,18 @@
     <article class="page-article fade" itemprop="blogPage">
         <div class="post-content page-content" id="page-content" itemprop="pageContent">
             
-            
+            <h1 id="皮皮集合"><a href="#皮皮集合" class="headerlink" title="皮皮集合"></a>皮皮集合</h1><blockquote>
+<p>丹荔枇杷火齐山，素馨茉莉天香国。 <a href="https://lunarzzz.github.io/" target="_blank" rel="noopener">一直在路上</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>蓟门看火树，疑是烛龙燃。             <a href="https://lunarzzz.github.io/" target="_blank" rel="noopener">pony马</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>京南花月无双地,蓟北繁华第一城。 <a href="https://stanslim.github.io/" target="_blank" rel="noopener">王的名字是</a></p>
+</blockquote>
+
         </div>
         
             <div class="page-reward">
@@ -252,6 +265,14 @@
         
         <div class="card">   
            
+
+
+      
+    <div onclick="ShowGitment()" id="gitment-display-button" style="display: block;">
+        <span>显示 Gitment 评论</span>
+    </div>
+    <div id="gitment" class="hide"></div>
+
 
 
         </div>
@@ -411,6 +432,9 @@
 
 
     
+    
+        <script type="text/javascript" src="/js/plugins/gitmint.browser.js?v=1.4.4"></script>
+<script type="text/javascript" src="/js/plugins/gitment.js?v=1.4.4"></script>
     
 
 
